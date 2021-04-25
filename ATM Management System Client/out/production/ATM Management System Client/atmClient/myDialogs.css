@@ -1,7 +1,6 @@
-package smart_atm_management_system;
+package atmClient;
 .myDialog{
     -fx-background-color:  #445d69;
-
 }
 .myDialog > *.button-bar > *.container{
     -fx-background-color:  #cfe0e5;
@@ -10,7 +9,7 @@ package smart_atm_management_system;
     -fx-font-size: 14px;
     -fx-font-weight: bold;
     -fx-font-family: Comic Sans MS;
-     -fx-background-color:  #cfe0e5;
+    -fx-background-color:  #cfe0e5;
 }
 .myDialog:header *.header-panel{
     -fx-background-color:  #445d69;
@@ -21,10 +20,9 @@ package smart_atm_management_system;
     -fx-text-fill: #cfe0e5;
 }
 .dialog-pane .button{
-   -fx-background-color: #445d69;
-   -fx-font-family: Comic Sans MS;
-   -fx-text-fill: #cfe0e5;
-   -fx-wrap-text: true;
-   -fx-border-radius: 20;
-   -fx-border-radius: 20;
- }
+    -fx-background-color: #445d69;
+    -fx-font-family: Comic Sans MS;
+    -fx-text-fill: #cfe0e5;
+    -fx-wrap-text: true;
+    -fx-cursor:hand;
+}

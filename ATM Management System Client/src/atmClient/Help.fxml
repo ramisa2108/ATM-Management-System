@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to right, #374c56, #394e59, #3b515c, #3d535f, #3f5662, #445c67, #49616d, #4e6772, #57717b, #617b84, #6a858e, #748f97);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smart_atm_management_system.HelpController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to right, #374c56, #394e59, #3b515c, #3d535f, #3f5662, #445c67, #49616d, #4e6772, #57717b, #617b84, #6a858e, #748f97);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atmClient.HelpController">
    <children>
       <VBox alignment="CENTER" spacing="50.0">
          <children>

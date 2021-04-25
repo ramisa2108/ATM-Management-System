@@ -107,7 +107,7 @@ public class Card {
 
     public  void initialize() {
         try {
-            String smartOrRegular = getSmartOrRegular(cardID);
+            String smartOrRegular = getSmartOrRegular(cardID).toLowerCase();
 
             if (smartOrRegular != null) {
 

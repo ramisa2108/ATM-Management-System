@@ -83,9 +83,10 @@ public class ChooseOperationBankController implements Initializable {
         if(myAlertBox.display()) {
 
             try {
-                BorderPane borderPane = FXMLLoader.load(getClass().getResource("chooseBankOrCustomer.fxml"));
+                BorderPane borderPane = FXMLLoader.load(getClass().getResource("ChooseBankOrCustomer.fxml"));
                 root.getChildren().setAll(borderPane);
             } catch (Exception e) {
+
                 System.out.println(e.getClass() + " " + e.getMessage());
             }
         }

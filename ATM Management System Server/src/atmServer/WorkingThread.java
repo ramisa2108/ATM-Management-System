@@ -360,7 +360,6 @@ public class WorkingThread implements Runnable {
 
                         response.accountID=globalRegularCard.getBankAccount().getAccountID();
                         response.bankName=globalRegularCard.getOwnerBank().getBankName();
-                        System.out.println(globalRegularCard.getOwnerBank().getBankName()+" "+globalRegularCard.getBankAccount().getAccountID());
                     }
 
                     writeToClient.writeObject(response);
@@ -437,7 +436,6 @@ public class WorkingThread implements Runnable {
                         response.requset="YES";
                         if(c.cardType.equalsIgnoreCase("RegularCard")){
                             globalCard=globalRegularCard=new RegularCard(response.cardID,this);
-                            System.out.println(globalRegularCard.getOwnerBank().getBankName()+" "+globalRegularCard.getBankAccount().getAccountID());
                         }else{
                             globalCard=globalSmartCard=new SmartCard(response.cardID,this);
                         }

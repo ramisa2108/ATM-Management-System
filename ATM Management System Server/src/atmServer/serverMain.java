@@ -4,7 +4,8 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class serverMain{
+public class
+serverMain{
 
     public static void main(String[] args) {
 
@@ -12,7 +13,7 @@ public class serverMain{
         try {
 
             System.out.println("The address of server is : " + InetAddress.getLocalHost().getHostAddress());
-            //Email.initializeMailSender();
+            Email.initializeMailSender();
 
             ServerSocket welcomeSocket = new ServerSocket(5582);
 

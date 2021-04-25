@@ -108,7 +108,7 @@ public class BankAccount {
 
             statement=connection.createStatement();
             String sql="UPDATE "+tableName+" SET account_type = '"+c.acctype+"' , email= '"+c.email+"' , mobile_no = '"+c.mobileNo+"' , national_ID = '"+c.nationalID+"' , active_status = '"+c.activeStatus+"' , account_user_name= '"+c.name+"' ,max_withdraw= "+c.withdraw+" ,max_transfer = "+c.transfer+" WHERE account_id= '"+this.AccountID+"'";
-            System.out.println(sql);
+
             statement.execute(sql);
             Email.sendMail(c.email,"Account Information Changed","Hi "+c.name+",\n"+"Information of your account holding ID number:"+this.AccountID+" under "+ownerBank.getBankName()+" has been changed.");
 
