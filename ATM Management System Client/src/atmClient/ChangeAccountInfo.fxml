@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smart_atm_management_system.ChangeAccountInfoController">
+    <children>
+        <HBox fx:id="topHBox" alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="700.0" spacing="30.0">
+            <children>
+                <Label alignment="CENTER" text="Enter Account ID" textFill="#cfe0e5">
+                    <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="textFieldAccountID" onKeyReleased="#search" prefHeight="30.0" promptText="please enter account id ">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="buttonGo" alignment="CENTER" contentDisplay="CENTER" lineSpacing="20.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#buttonGoClicked" prefHeight="35.0" text="Go">
+                    <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <VBox fx:id="root" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="700.0" spacing="10.0" style="-fx-background-color: transparent;" visible="false">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding>
+            </VBox>
+            <ListView fx:id="list" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" translateX="63.0" translateY="-56.0" visible="false" />
+         </children>
+      </StackPane>
+      <HBox alignment="CENTER" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="messageLabel" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" textFill="#cfe0e5">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+    </children>
+</VBox>

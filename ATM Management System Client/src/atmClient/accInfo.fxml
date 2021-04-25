@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smart_atm_management_system.accInfoController">
+    <children>
+        <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="320.0" prefWidth="700.0" spacing="10.0" style="-fx-background-color: transparent">
+            <children>
+                <Label fx:id="accName" alignment="CENTER" textFill="#d1faff">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="accNum" alignment="CENTER" contentDisplay="CENTER" textFill="#d1faff">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="accType" alignment="CENTER" contentDisplay="CENTER" textFill="#d1faff">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="accBalance" alignment="CENTER" contentDisplay="CENTER" textFill="#d1faff">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="email" alignment="CENTER" contentDisplay="CENTER" layoutX="410.0" layoutY="357.0" textFill="#d1faff">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="mobileNo" alignment="CENTER" contentDisplay="CENTER" layoutX="410.0" layoutY="385.0" textFill="#d1faff">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="withdraw" alignment="CENTER" contentDisplay="CENTER" layoutX="360.0" layoutY="280.0" textFill="#d1faff">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="transfer" alignment="CENTER" contentDisplay="CENTER" layoutX="360.0" layoutY="298.0" textFill="#d1faff">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+        </VBox>
+    </children>
+</VBox>

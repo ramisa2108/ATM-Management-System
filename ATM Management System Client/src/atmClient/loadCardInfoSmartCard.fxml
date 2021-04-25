@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smart_atm_management_system.loadCardInfoSmartCardController">
+    <children>
+        <VBox fx:id="loadBox" alignment="CENTER" prefHeight="300.0" prefWidth="700.0">
+            <children>
+                <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="200.0" spacing="30.0">
+                    <children>
+                        <Label fx:id="cardNumField" textFill="#cfe0e5">
+                            <font>
+                                <Font name="Comic Sans MS" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="cardTypeField" textFill="#cfe0e5">
+                            <font>
+                                <Font name="Comic Sans MS" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="200.0" spacing="30.0">
+                    <children>
+                        <Label fx:id="nameField" textFill="#cfe0e5">
+                            <font>
+                                <Font name="Comic Sans MS" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="emailField" textFill="#cfe0e5">
+                            <font>
+                                <Font name="Comic Sans MS" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <TableView fx:id="tableView" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#selected" prefHeight="160.0" prefWidth="650.0" style="-fx-background-color: #cfe0e5;">
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                    <columns>
+                        <TableColumn fx:id="bankName" prefWidth="75.0" style="-fx-background-color:  #cfe0e5; -fx-border-color: BLACK; -fx-border-width: 0.2" text="Bank Name" />
+                        <TableColumn fx:id="accountOwner" prefWidth="75.0" style="-fx-background-color:  #cfe0e5; -fx-border-color: BLACK; -fx-border-width: 0.2" text="Account Owner" />
+                        <TableColumn fx:id="accountID" prefWidth="75.0" style="-fx-background-color:  #cfe0e5; -fx-border-color: BLACK; -fx-border-width: 0.2" text="Account ID" />
+                        <TableColumn fx:id="accountType" prefWidth="75.0" style="-fx-background-color:  #cfe0e5; -fx-border-color: BLACK; -fx-border-width: 0.2" text="Account Type" />
+                    </columns>
+                </TableView>
+            </children>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+        </VBox>
+    </children>
+</VBox>

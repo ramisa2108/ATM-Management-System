@@ -1,0 +1,31 @@
+.button{
+    -fx-background-color: #cfe0e5;
+    -fx-text-fill: #374c56;
+    -fx-wrap-text: true;
+
+}
+.button:hover{
+
+    -fx-background-color:  #445d69 !important;
+    -fx-text-fill: #cfe0e5;
+        -fx-wrap-text: true;
+    -fx-border-color: #cfe0e5;
+    -fx-font-family: "Comic Sans MS";
+
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-font-weight:bold;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.table-view .table-column{
+    -fx-alignment:center;
+    -fx-font-family: "Comic Sans MS";
+}
+.list-cell{
+    -fx-font-family: "Comic Sans MS";
+}
+
+

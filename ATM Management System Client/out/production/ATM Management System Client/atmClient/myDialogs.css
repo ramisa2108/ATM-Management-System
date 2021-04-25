@@ -1,0 +1,30 @@
+package smart_atm_management_system;
+.myDialog{
+    -fx-background-color:  #445d69;
+
+}
+.myDialog > *.button-bar > *.container{
+    -fx-background-color:  #cfe0e5;
+}
+.myDialog > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: Comic Sans MS;
+     -fx-background-color:  #cfe0e5;
+}
+.myDialog:header *.header-panel{
+    -fx-background-color:  #445d69;
+}
+.myDialog:header *.header-panel *.label{
+    -fx-font-size: 18px;
+    -fx-font-family: Comic Sans MS;
+    -fx-text-fill: #cfe0e5;
+}
+.dialog-pane .button{
+   -fx-background-color: #445d69;
+   -fx-font-family: Comic Sans MS;
+   -fx-text-fill: #cfe0e5;
+   -fx-wrap-text: true;
+   -fx-border-radius: 20;
+   -fx-border-radius: 20;
+ }

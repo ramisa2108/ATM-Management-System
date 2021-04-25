@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smart_atm_management_system.addAccount">
+   <children>
+      <Label fx:id="welcomeLabel" textFill="#cfe0e5">
+         <font>
+            <Font name="Comic Sans MS" size="26.0" />
+         </font>
+      </Label>
+      <VBox fx:id="loadBox" alignment="CENTER" prefHeight="300.0" prefWidth="700.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Card Number" textFill="#cfe0e5">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cardInput">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="47.0" prefHeight="80.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Account Number" textFill="#cfe0e5">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="accountInput">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#addClicked" text="Add">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label fx:id="messageLabel" textFill="#cfe0e5">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>

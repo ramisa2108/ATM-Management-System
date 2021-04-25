@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smart_atm_management_system.loadCardInfoRegularCardController">
+    <children>
+        <VBox fx:id="loadBox" alignment="CENTER" prefHeight="300.0" prefWidth="700.0" spacing="20.0">
+            <children>
+                  <Label fx:id="cardNumField" textFill="#cfe0e5">
+                      <font>
+                          <Font name="Comic Sans MS" size="18.0" />
+                      </font>
+                  </Label>
+                  <Label fx:id="cardTypeField" textFill="#cfe0e5">
+                      <font>
+                          <Font name="Comic Sans MS" size="18.0" />
+                      </font>
+                  </Label>
+                  <Label fx:id="nameField" textFill="#cfe0e5">
+                      <font>
+                          <Font name="Comic Sans MS" size="18.0" />
+                      </font>
+                  </Label>
+                  <Label fx:id="emailField" textFill="#cfe0e5">
+                      <font>
+                          <Font name="Comic Sans MS" size="18.0" />
+                      </font>
+                  </Label>
+            <Label fx:id="accNumField" layoutX="360.0" layoutY="190.0" textFill="#cfe0e5">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="bankNameField" layoutX="360.0" layoutY="203.0" textFill="#cfe0e5">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+            </children>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+        </VBox>
+    </children>
+</VBox>

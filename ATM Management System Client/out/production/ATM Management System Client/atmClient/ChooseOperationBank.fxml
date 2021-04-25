@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: linear-gradient(to right, #374c56, #394e59, #3b515c, #3d535f, #3f5662, #445c67, #49616d, #4e6772, #57717b, #617b84, #6a858e, #748f97);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smart_atm_management_system.ChooseOperationBankController">
+    <top>
+        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="850.0" style="-fx-background-color: #cfe0e5;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="100.0" fitWidth="950.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@header.PNG" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="WelcomeLabel" alignment="CENTER" contentDisplay="CENTER" textFill="#d1faff">
+                    <font>
+                        <Font name="Colonna MT" size="24.0" />
+                    </font>
+                </Label>
+                <VBox fx:id="loadBox" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="350.0" prefWidth="700.0" />
+                <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#buttonBackClicked" text="&lt;&lt; Logout" translateX="250.0">
+                    <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+            <padding>
+                <Insets top="10.0" />
+            </padding></VBox>
+    </center>
+    <left>
+        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="150.0" style="-fx-background-color: #445d69;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="accountButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonAccountRelatedClicked" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: cfe0e5;" text="Accounts" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="cardRelated" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonCardRelatedClicked" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: cfe0e5;" text="Card options" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="depositMoney" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonDepositClicked" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: cfe0e5;" text="Deposit money" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </left>
+</BorderPane>

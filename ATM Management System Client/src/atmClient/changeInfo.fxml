@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smart_atm_management_system.changeInfoController">
+   <children>
+      <VBox fx:id="root" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="700.0" spacing="5.0" style="-fx-background-color: transparent;">
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="400.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Name              " textFill="#cfe0e5">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldName" prefWidth="200.0" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="National ID     " textFill="#cfe0e5" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldNationalID" prefHeight="31.0" prefWidth="264.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Email               " textFill="#cfe0e5" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldEmail" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Mobile No       " textFill="#cfe0e5" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldMobileNo" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Max Transfer " textFill="#cfe0e5" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldTransfer" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Max Withdraw" textFill="#cfe0e5" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldWithdraw" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox alignment="CENTER_LEFT" maxHeight="28.0" minHeight="28.0" prefHeight="28.0" prefWidth="200.0" spacing="60.0">
+               <children>
+                  <Label contentDisplay="CENTER" style="-fx-border-radius: 15;" text="Active Status " textFill="#cfe0e5">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="activeButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="15.0" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-max-height: 5;" text="active" textFill="#cfe0e5">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="toggleGroupActiveStatus" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="inactiveButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="15.0" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-max-height: 5;" text="inactive" textFill="#cfe0e5" toggleGroup="$toggleGroupActiveStatus">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="28.0" minHeight="28.0" prefHeight="28.0" prefWidth="200.0" spacing="60.0">
+               <children>
+                  <Label contentDisplay="CENTER" text="Account Type " textFill="#cfe0e5">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="currentButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="15.0" style="-fx-border-radius: 5; -fx-background-radius: 5; -fx-max-height: 5;" text="current" textFill="#cfe0e5">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="toggleGroupAccountType" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="savingsButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="15.0" style="-fx-border-radius: 5; -fx-background-radius: 5; -fx-max-height: 5;" text="savings" textFill="#cfe0e5" toggleGroup="$toggleGroupAccountType">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <Button fx:id="update" contentDisplay="CENTER" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#buttonChangeClicked" prefHeight="40.0" style="-fx-background-color: #cfe0e5;" text="Update" textAlignment="JUSTIFY" textFill="#445d69" translateX="250.0">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>

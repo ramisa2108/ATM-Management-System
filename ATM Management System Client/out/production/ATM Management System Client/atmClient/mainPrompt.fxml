@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to right, #374c56, #394e59, #3b515c, #3d535f, #3f5662, #445c67, #49616d, #4e6772, #57717b, #617b84, #6a858e, #748f97);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smart_atm_management_system.mainPromptController">
+   <children>
+      <VBox fx:id="loadBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to right, #374c56, #394e59, #3b515c, #3d535f, #3f5662, #445c67, #49616d, #4e6772, #57717b, #617b84, #6a858e, #748f97);">
+         <children>
+            <Label fx:id="welcomeLabel" text="Label" textFill="#cfe0e5">
+               <font>
+                  <Font name="Comic Sans MS" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@user.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="cardIDInput" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" promptText="Enter ID">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@password.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="passwordInput" prefWidth="250.0" promptText="Enter pin ">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="submitButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #cfe0e5;" text="Login" translateX="40.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Label fx:id="wrongInput" alignment="CENTER" contentDisplay="CENTER" prefWidth="550.0" textFill="#d1faff">
+                     <font>
+                        <Font name="Comic Sans MS" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="296.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="forgetButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#buttonForgetClicked" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #cfe0e5;" text="Forgotten Password?" translateX="200.0" visible="false">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>
