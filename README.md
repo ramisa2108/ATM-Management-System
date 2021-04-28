@@ -7,6 +7,9 @@ Built as term project for Object Oriented Programming Sessional Course.
 - MySQL
 
 # Project Overview
+![login_page](https://github.com/ramisa2108/ATM-Management-System/blob/main/login_page.png)
+
+
 - User Activities:
   - Check Account Information
   - Check Balance
